@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Define o conjunto de caracteres e a viewport -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Importa o CSS do Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <title>Password!</title>
+</head>
+<body class="d-flex justify-content-center align-items-center vh-100">
+    <!-- Cria um grupo de entrada com um campo de entrada e um botão -->
+    <div class="input-group mb-3 col-6">
+        <!-- Campo de entrada onde a senha será exibida -->
+        <input type="text" id="senha" class="form-control" readonly>
+        <div class="input-group-append">
+            <!-- Botão que chama a função gerarSenha quando clicado -->
+            <button class="btn btn-outline-secondary" type="button" onclick="gerarSenha()">Gerar Senha</button>
+        </div>
+    </div>
+    <!-- Importa o arquivo JavaScript -->
+    <script src="generator.js"></script>
+</body>
+</html>
